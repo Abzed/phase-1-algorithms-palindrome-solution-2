@@ -1,13 +1,27 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  for (let i = 0; i < word.length/2; i++) {
+    const j = word.length - 1 - i
+    if(word[i] != word[j]){
+      return false
+    }
+    else{
+      return true
+    }
+    
+  }
 }
 
 /* 
-  Add your pseudocode here
+  func takes a word as arg
+    loop thru letters to middle of word
+    if first half is same as last half
+      return true
+    else return false
 */
 
 /*
-  Add written explanation of your solution here
+  Iterates thru the word and checks
+  for matching words from first half and last half
 */
 
 // You can run `node index.js` to view these console logs
